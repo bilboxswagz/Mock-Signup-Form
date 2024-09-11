@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Sara's Simple Mock Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-sidebar">
+            <div class="img-text">WORLDPAY</div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>This is <span>not</span> a real online service! You know you need something like this in your life to help you realize your <span>deepest dreams</span>. Sign up <em>now</em> to get started.
+                <br>
+                <br>
+                You <em>know</em> you want to.
+                </h1>
+            </header>
+
+            <div class="form-section">
+                <div class="form-container">
+                    <h1 class="txt-above-form">Let's do this!</h1>
+                    <form action="http://httpbin.org/post" method="post">
+                        <ul>
+                        <section>
+                            <li>
+                                <label for="first_name">FIRST NAME</label>
+                                <br>
+                                <input type="text" name="first_name" id="first_name" required>
+                            </li>
+                            <li>
+                                <label for="last_name">LAST NAME</label>
+                                <br>
+                                <input type="text" name="last_name" id="last_name" required>
+                            </li>
+                        </section>
+                        <section>
+                            <li>
+                                <label for="e-mail">EMAIL</label>
+                                <br>
+                                <input type="email" name="e-mail" id="e-mail" required>
+                            </li>
+                            <li>
+                                <label for="phone_number">PHONE NUMBER</label>
+                                <br>
+                                <input type="tel" name="phone_number" id="phone_number" placeholder="0123456789">
+                            </li>
+                        </section>
+                        <section>
+                            <li>
+                                <label for="password">PASSWORD</label>
+                                <br>
+                                <input type="password" name="password" id="password" required>
+                                <i class="fa-solid fa-eye password" id="eye"></i>
+                                <div class="pwd-feedback"></div>
+                            </li>
+                            <li>
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <br>
+                                <input type="password" name="confirm_password" id="confirm_password" required>
+                                <i class="fa-solid fa-eye confirm_password" id="eye"></i>
+                            </li>
+                        </section>
+                        </ul>
+                        <div class="form-confirmation">
+                            <button type="submit">Mock Submit</button>
+                            <div><em>Clicking the button will take you to httpbin.org/post.</em></div>
+                            <div>Want to see source code? Visit my <a href="https://github.com/bilboxswagz">GitHub</a>.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
